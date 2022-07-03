@@ -1,0 +1,254 @@
+* {
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*Solo index.html HEADER Y FOOTER de los demas html*/
+
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+	
+
+header {
+ 	background-color: #03738C;	
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+
+
+ header input {
+ 	width: 500px;
+ 	height: 30px;	
+ }
+
+ header img {
+ 	padding: 10px 10px;
+ 	height: 100px;
+ }
+
+a {
+	text-decoration: none;
+}
+
+ ul {
+ 	display: flex;
+ 	align-items: center;
+ 	list-style: none;
+ }
+ li {
+ 	margin-right: 1.5rem;
+ }
+
+p {
+	color: #120f19;
+}
+.box1{
+	background-color: #03738C;
+	margin: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px; 
+}
+
+.box1 img{
+	width: 300px;
+	height: 200px;
+}
+
+
+.box2 {
+	background-color: #03738C;
+	margin: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+
+.box2 img{
+	width: 300px;
+	height: 200px;
+}
+
+.box3 {
+	background-color: #03738C;
+	margin: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+b {
+	color: #120f19;
+}
+
+footer {
+	background-color: #03738C;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+footer b {
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+footer iframe {
+	padding: 0px 50px 5px 800px;
+	width: 300px;
+	height: 100px;
+	display: inline-block;
+}
+
+footer h2 {
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+footer p {
+	color: white;
+}
+
+/*nosotros.html*/
+
+
+.box1_nosotros {
+	background-color: #03738C;
+	margin: 50px 230px 200px 230px ;
+	padding: 10px 10px;
+}
+
+
+/*servicio.html*/
+
+.box1_servicio {
+	background-color: #03738C;
+	margin: 50px 230px 200px 230px ;
+	padding: 10px 10px;
+}
+
+/*productos.html*/
+
+.box1_productos {
+	background-color: #03738C;
+	margin: 50px 230px 200px 230px ;
+	padding: 10px 10px;
+}
+
+/*contacto.html*/
+
+main h1 {
+	background-color: #011C26;
+	color:#DFF5EA;
+	padding: 0px 300px 50px 300px;
+}
+
+.box_contacto {
+	background-color: #DFF5EA;
+	padding: 0px 300px 50px 300px;
+}
+
+
+
+.box_contacto label input{
+	display: inline-block;
+}
+
+
+
+
+/*aplicando grid*/
+
+
+.grid-layout{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	justify-content: space-around;
+
+
+	width: 80%;
+	margin: 500px auto 200px;
+	
+	padding: 0px;
+}
+
+.header {
+	grid-area: header;
+}
+
+
+
+.footer {
+	grid-area: footer;
+
+}
+
+
+.grid-container {
+	display: grid;	
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer"
+}
+
+
+@media (max-width: 768px) {
+	.grid-container {
+		
+	grid-template-areas:
+	"header	header"
+	"main  main" 
+	"footer footer"
+	}
+
+
+.grid-layout{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	justify-content: space-around;
+
+
+	width: 80%;
+	margin: 500px auto 200px;
+	
+	padding: 0px;
+}
+}
+
+
+@media (max-width: 425px) {
+	.grid-layout {
+		display: grid; 
+		grid-column-end: auto;
+
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: repeat(3, 100px;)
+	}
+
+	footer p {
+	display: inline-block;
+	}
+}
+
+
