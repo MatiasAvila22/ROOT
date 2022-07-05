@@ -4,6 +4,34 @@
 	box-sizing: border-box;
 }
 
+
+/*animacion navbar*/
+
+
+.link {
+	text-decoration: none;
+	color: inherit;
+	padding: 10px;
+	position: relative;
+}
+
+.link:after {
+	content: "";
+	width: 0;
+	height: 4px;
+	background-color: #011C26;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	transition: all 0.5;
+	will-change: width;
+}
+
+.link:hover:after {
+	width: 100%;
+	right: 0;
+}
+
 /*Solo index.html HEADER Y FOOTER de los demas html*/
 
 
